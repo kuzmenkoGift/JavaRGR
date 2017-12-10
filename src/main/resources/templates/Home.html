@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KR</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="KR.js"></script>
+    <style>
+        p {text-indent: 20px;}
+        h1 {margin-bottom: 15px;}
+        h2 {margin-bottom: -15px;}
+        h3 {margin-bottom: -15px;}
+    </style>
+</head>
+<body>
+<div>
+    <div>
+        <p><h1 align="center" id="res"></h1></p>
+        <p><table >
+
+
+            <tr>
+                <td>
+                    <p><h3 id="IN1" align="center"></h3></p>
+                    <p align="center"><textarea id="I1" cols="14" rows="9" ></textarea></p>
+                    <p><input id="EV1" align="center" value="20"></input></p>
+                </td>
+                <td>
+                    <p><h3 id="IN2" align="center"></h3></p>
+                    <p align="center"><textarea id="I2" cols="14" rows="9"></textarea></p>
+                    <p><input id="EV2" align="center" value="20"></input></p>
+                </td>
+                <td>
+                    <p><h3 id="IN3" align="center"></h3></p>
+                    <p align="center"><textarea id="I3" cols="15" rows="9" ></textarea></p>
+                    <p><input id="EV3" align="center" value="20"></input></p>
+                </td>
+                <td>
+                <table cellspacing="20" cellpadding="2">
+                    <tr>
+                        <td><button onclick="getInvaders()">Получить захватчиков</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="getMap()">Получить карту</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="searchForInvaters()">Найти захватчиков</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="cheak()">Проверить</button></td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+        </table></p>
+        <p><h2>Radar Id: </h2><h2 id="Nmap"></h2></p>
+        <p><td><textarea id="map" rows="40" cols="120" wrap="off"></textarea></td></p>
+    </div>
+
+</div>
+</body>
+</html>
